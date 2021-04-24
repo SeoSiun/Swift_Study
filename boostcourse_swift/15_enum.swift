@@ -124,3 +124,71 @@ enum Month {
 
 Month.mar.printMessage()
 // 따스한 봄~
+
+
+
+//MARK: Associated value(연관값)
+// 열거형 case에 원시값(raw value)를 저장하는 대신에 연관된 값을 저장할 수 있음
+// 연관값은 원시값의 한계를 해결할 수 있음
+
+// 원시값의 한계
+// 모든 케이스가 동일한 형식을 사용해야 함
+// 케이스 당 값을 하나밖에 저장할 수 없음
+// 원시값 문자열에 숫자가 포함되어 있을 경우 숫자만 사용하려면 따로 추출해야하는 번거로움이 있음
+
+// 원시값의 형식은 열거형이름 뒤에 선언하지만 연관값은 케이스 이름 뒤에 선언
+// 선언 시점이 아닌 새로운 열거형을 생성할 때 값을 저장함
+// 튜플을 사용해 하나의 케이스에 서로 다른 연관값들을 저장할 수 있음
+/*
+ enum enumName {
+    case caseName(Type)
+    case caseName(Type,Type, ...)
+ }
+ */
+
+// 활용
+
+// 정보를 원시값을 이용해 문자열로 저장
+// 각 기기마다 저장할 값들이 다르고, 단순히 콤마(,)로 구분되어 있어 값 추출이 번거로움
+enum AppleDevice: String {
+    case iPhone = "X, 256GB"
+    case iMac = "27, Pro, 300만원"
+    case macBook = "Air, 1kg, 150만원"
+}
+
+// 위의 내용을 연관값을 활용해 바꾼 것
+// 상황에 맞게 named 혹은 unnamed 튜플을 사용할 수 있다.
+enum AppleDevice {
+    case iPhone(model: String, storage: Int) // named tuple
+    case iMac(size: Int, model: String, price: Int)
+    case macBook(String, Int, Int) // unnamed tuple
+}
+
+// 연관값을 확인한 후 코드를 실행할 때는 주로 switch문 사용
+var gift = AppleDevice.iPhone(model: "X", storage: 256)
+
+switch gift {
+case .iPhone(model: "X", storage: 256):
+    print("iPhone X and 256GB")
+case .iPhone(model: "X", _)
+    // 와일드카드 패턴 사용 가능
+    print("iPhone X")
+case .iPhone:
+    // 연관값 생략 가능
+    print("iPhone")
+case .iPhone(let model, let storage):
+    // 블록 내부에서 연관값을 사용할 땐 상수로 바인딩
+    // 값을 변경할 때는 var 로 변경가능
+    print("iPhone \(model) and \(storage)GB")
+case let .iMac(size, model, price):
+    // 모든 연관값을 동일한 형태로 바인딩한다면
+    // let 키워드를 열거형 케이스 앞에 표기하는 것도 가능
+    print("iMac \(size), \(model), \(price)")
+}
+
+// 새로운 케이스를 할당할 경우 모두 새로운 값으로 교체됨
+gift = .macBook("Air", 1, 150)
+
+if case let .macBook(model, weight, price) = gift {
+    print("maccBook \(model), \(weight)kg, \(price)")
+}
