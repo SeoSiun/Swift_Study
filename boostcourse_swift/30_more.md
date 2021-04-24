@@ -1,0 +1,13 @@
+# 추가적으로 알아야 할 문법과 개념
+
+
+- 제네릭(Generics)
+- 서브스크립트(Subscript)
+- 접근수준(Access Control)
+- ARC(Automatic Reference Counting)
+- 중첩타입(Nested Types)
+- 사용자정의 연산자(Custom Operators)
+- 오류 처리(Error Handling)
+- 불명확 타입(Opaque Types)
+- 프로토콜 지향 프로그래밍(Protocol Oriented Programming)
+
