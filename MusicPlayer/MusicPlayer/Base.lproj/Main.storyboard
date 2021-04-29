@@ -45,8 +45,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="playRauseButton" destination="lvy-6J-2gO" id="vBF-ac-BMG"/>
-                        <outlet property="progessSlider" destination="D7C-Ri-gPG" id="cPM-uR-ZMc"/>
+                        <outlet property="playPauseButton" destination="lvy-6J-2gO" id="vBF-ac-BMG"/>
+                        <outlet property="progressSlider" destination="D7C-Ri-gPG" id="cPM-uR-ZMc"/>
                         <outlet property="timeLable" destination="7yL-yF-3a4" id="keC-8E-kMv"/>
                     </connections>
                 </viewController>
