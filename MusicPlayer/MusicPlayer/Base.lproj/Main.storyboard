@@ -41,36 +41,19 @@
                                     <action selector="touchUpPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ziK-MX-Kgu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" text="aaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puU-iM-KVh">
-                                <rect key="frame" x="20" y="540" width="233" height="21"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" ambiguous="YES" text="bbbbbbbbbbbbbbbbbbbbbb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-As-PRX">
-                                <rect key="frame" x="273" y="540" width="82" height="21"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6fc-As-PRX" secondAttribute="trailing" constant="20" id="5Mc-Gf-shL"/>
                             <constraint firstItem="7yL-yF-3a4" firstAttribute="top" secondItem="lvy-6J-2gO" secondAttribute="bottom" constant="30" id="6o6-VM-xgT"/>
                             <constraint firstItem="D7C-Ri-gPG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8WC-DU-yUh"/>
-                            <constraint firstItem="lvy-6J-2gO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="900" constant="100" id="HAF-f8-6Za"/>
+                            <constraint firstItem="lvy-6J-2gO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="HAF-f8-6Za"/>
                             <constraint firstItem="D7C-Ri-gPG" firstAttribute="top" secondItem="7yL-yF-3a4" secondAttribute="bottom" constant="16" id="bcV-G3-tsT"/>
                             <constraint firstItem="lvy-6J-2gO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="dc6-Pw-Shg"/>
                             <constraint firstItem="lvy-6J-2gO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e85-tK-VeB"/>
                             <constraint firstItem="D7C-Ri-gPG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fai-D9-W4I"/>
                             <constraint firstItem="7yL-yF-3a4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hYj-XU-qHm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D7C-Ri-gPG" secondAttribute="trailing" constant="16" id="rC5-uX-LXd"/>
-                            <constraint firstItem="6fc-As-PRX" firstAttribute="leading" secondItem="puU-iM-KVh" secondAttribute="trailing" constant="20" id="w2F-wT-sGx"/>
-                            <constraint firstItem="puU-iM-KVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zAf-Vb-PpZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,12 +70,6 @@
     <resources>
         <image name="button_pause" width="185" height="185"/>
         <image name="button_play" width="187" height="189"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
