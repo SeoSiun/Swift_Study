@@ -1,6 +1,7 @@
 # 단축키
 - cmd+opt+ctrl+enter : assistant 띄우기
 - cmd+enter : assistant 닫기
+
 - cmd+R : 빌드
 - cmd+. : 빌드 중지
 - cmd+shift+y : 디버그 창 보기/숨기기
