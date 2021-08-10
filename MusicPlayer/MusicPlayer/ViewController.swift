@@ -33,6 +33,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate{
         do{
             try self.player = AVAudioPlayer(data: soundAsset.data)
             self.player.delegate = self
+            // ViewController가 AVAudioPlayer의 딜리게이트가 됨.
         }catch let error as NSError{
             print("플레이어 초기화 실패")
             print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")

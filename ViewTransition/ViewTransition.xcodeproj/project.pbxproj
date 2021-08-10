@@ -16,6 +16,7 @@
 		C087138126490F2E00FC4174 /* ViewTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087138026490F2E00FC4174 /* ViewTransitionTests.swift */; };
 		C087138C26490F2E00FC4174 /* ViewTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087138B26490F2E00FC4174 /* ViewTransitionUITests.swift */; };
 		C087139A26490F9A00FC4174 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087139926490F9A00FC4174 /* SecondViewController.swift */; };
+		C08CCB2626C27310001BE6CF /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CCB2526C27310001BE6CF /* UserInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C087138B26490F2E00FC4174 /* ViewTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransitionUITests.swift; sourceTree = "<group>"; };
 		C087138D26490F2E00FC4174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C087139926490F9A00FC4174 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C08CCB2526C27310001BE6CF /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		C087135D26490F2D00FC4174 = {
 			isa = PBXGroup;
 			children = (
+				C08CCB2526C27310001BE6CF /* UserInformation.swift */,
 				C087136826490F2D00FC4174 /* ViewTransition */,
 				C087137F26490F2E00FC4174 /* ViewTransitionTests */,
 				C087138A26490F2E00FC4174 /* ViewTransitionUITests */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08CCB2626C27310001BE6CF /* UserInformation.swift in Sources */,
 				C087139A26490F9A00FC4174 /* SecondViewController.swift in Sources */,
 				C087136E26490F2D00FC4174 /* ViewController.swift in Sources */,
 				C087136A26490F2D00FC4174 /* AppDelegate.swift in Sources */,
