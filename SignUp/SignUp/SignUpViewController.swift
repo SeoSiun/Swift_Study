@@ -28,6 +28,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func touchUpNextButton(_ sender: UIButton){
+        UserInformation.shared.id = idTextField.text
+        UserInformation.shared.password = passwordTextField.text
+        UserInformation.shared.image = userImageView.image
+        UserInformation.shared.intro = textView.text
+    }
+    
     @objc func touchUpSelectImageButton() {
         self.present(self.imagePicker, animated: true, completion: nil)
     }
@@ -43,6 +50,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         }
         setButtonState()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+         self.view.endEditing(true)
+   }
     
     func textViewDidChange(_ textView: UITextView) {
         setButtonState()
@@ -72,8 +83,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         passwordTextField.delegate = self
         checkTextField.delegate = self
         textView.delegate = self
-        
-        
+                
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(touchUpSelectImageButton))
         userImageView.isUserInteractionEnabled = true
         userImageView.addGestureRecognizer(tapGestureRecognizer)
