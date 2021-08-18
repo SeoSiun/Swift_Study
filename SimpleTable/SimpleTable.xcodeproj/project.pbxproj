@@ -15,6 +15,8 @@
 		C043457426CB9CE300819948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C043457226CB9CE300819948 /* LaunchScreen.storyboard */; };
 		C043457F26CB9CE400819948 /* SimpleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043457E26CB9CE400819948 /* SimpleTableTests.swift */; };
 		C043458A26CB9CE400819948 /* SimpleTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043458926CB9CE400819948 /* SimpleTableUITests.swift */; };
+		C043459826CD26B800819948 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043459726CD26B800819948 /* CustomTableViewCell.swift */; };
+		C043459A26CD313A00819948 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043459926CD313A00819948 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C043458526CB9CE400819948 /* SimpleTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C043458926CB9CE400819948 /* SimpleTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableUITests.swift; sourceTree = "<group>"; };
 		C043458B26CB9CE400819948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C043459726CD26B800819948 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C043459926CD313A00819948 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		C043455B26CB9CE300819948 = {
 			isa = PBXGroup;
 			children = (
+				C043459926CD313A00819948 /* SecondViewController.swift */,
+				C043459726CD26B800819948 /* CustomTableViewCell.swift */,
 				C043456626CB9CE300819948 /* SimpleTable */,
 				C043457D26CB9CE400819948 /* SimpleTableTests */,
 				C043458826CB9CE400819948 /* SimpleTableUITests */,
@@ -260,6 +266,8 @@
 			files = (
 				C043456C26CB9CE300819948 /* ViewController.swift in Sources */,
 				C043456826CB9CE300819948 /* AppDelegate.swift in Sources */,
+				C043459826CD26B800819948 /* CustomTableViewCell.swift in Sources */,
+				C043459A26CD313A00819948 /* SecondViewController.swift in Sources */,
 				C043456A26CB9CE300819948 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
