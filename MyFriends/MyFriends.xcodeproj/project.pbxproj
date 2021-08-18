@@ -15,6 +15,7 @@
 		C04345B426CD53E700819948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04345B226CD53E700819948 /* LaunchScreen.storyboard */; };
 		C04345BF26CD53E700819948 /* MyFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04345BE26CD53E700819948 /* MyFriendsTests.swift */; };
 		C04345CA26CD53E700819948 /* MyFriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04345C926CD53E700819948 /* MyFriendsUITests.swift */; };
+		C04345D826CD552300819948 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04345D726CD552300819948 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C04345C526CD53E700819948 /* MyFriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04345C926CD53E700819948 /* MyFriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsUITests.swift; sourceTree = "<group>"; };
 		C04345CB26CD53E700819948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C04345D726CD552300819948 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C043459B26CD53E500819948 = {
 			isa = PBXGroup;
 			children = (
+				C04345D726CD552300819948 /* Friend.swift */,
 				C04345A626CD53E500819948 /* MyFriends */,
 				C04345BD26CD53E700819948 /* MyFriendsTests */,
 				C04345C826CD53E700819948 /* MyFriendsUITests */,
@@ -261,6 +264,7 @@
 				C04345AC26CD53E500819948 /* ViewController.swift in Sources */,
 				C04345A826CD53E500819948 /* AppDelegate.swift in Sources */,
 				C04345AA26CD53E500819948 /* SceneDelegate.swift in Sources */,
+				C04345D826CD552300819948 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
