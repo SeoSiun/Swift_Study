@@ -19,6 +19,8 @@
 		C07E784B26CE700D004E6802 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E784A26CE700D004E6802 /* Country.swift */; };
 		C07E784D26CE714D004E6802 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E784C26CE714D004E6802 /* CityInfo.swift */; };
 		C07E784F26CE7548004E6802 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E784E26CE7548004E6802 /* CountryTableViewCell.swift */; };
+		C07E785126CF4B57004E6802 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E785026CF4B57004E6802 /* CityTableViewCell.swift */; };
+		C07E785326CF60D8004E6802 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E785226CF60D8004E6802 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C07E784A26CE700D004E6802 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		C07E784C26CE714D004E6802 /* CityInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 		C07E784E26CE7548004E6802 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		C07E785026CF4B57004E6802 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		C07E785226CF60D8004E6802 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		C07E780C26CD5A22004E6802 = {
 			isa = PBXGroup;
 			children = (
+				C07E785226CF60D8004E6802 /* DetailViewController.swift */,
+				C07E785026CF4B57004E6802 /* CityTableViewCell.swift */,
 				C07E781726CD5A23004E6802 /* Weather */,
 				C07E782E26CD5A23004E6802 /* WeatherTests */,
 				C07E783926CD5A23004E6802 /* WeatherUITests */,
@@ -270,12 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07E785326CF60D8004E6802 /* DetailViewController.swift in Sources */,
 				C07E781D26CD5A23004E6802 /* ViewController.swift in Sources */,
 				C07E781926CD5A23004E6802 /* AppDelegate.swift in Sources */,
 				C07E784D26CE714D004E6802 /* CityInfo.swift in Sources */,
 				C07E781B26CD5A23004E6802 /* SceneDelegate.swift in Sources */,
 				C07E784B26CE700D004E6802 /* Country.swift in Sources */,
 				C07E784F26CE7548004E6802 /* CountryTableViewCell.swift in Sources */,
+				C07E785126CF4B57004E6802 /* CityTableViewCell.swift in Sources */,
 				C07E784926CE6E16004E6802 /* CityListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

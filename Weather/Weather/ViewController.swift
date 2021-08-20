@@ -25,7 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.assetName = country.assetName
         cell.flagImage.image = UIImage(named: "flag_" + country.assetName)
        
-        
         return cell
     }
 
@@ -39,6 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         
         nextViewController.assetName = cell.assetName
+        nextViewController.countryName = cell.titleLabel.text
     }
     
     override func viewDidLoad() {

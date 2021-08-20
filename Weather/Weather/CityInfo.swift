@@ -25,4 +25,25 @@ struct CityInfo: Codable {
         case cityName = "city_name"
         case rainfallProbability = "rainfall_probability"
     }
+    
+    var getTemperature: String {
+        return "섭씨 " + String(celsius) + "도 / 화씨 " + String(round((celsius * 1.8 + 32) * 10) / 10) + "도"
+    }
+    
+    var getRainRate: String{
+        return "강수확률 " + String(rainfallProbability) + "%"
+    }
+    
+    var imageName: String{
+        if(rainfallProbability < 30){
+            return "sunny"
+        }
+        if(rainfallProbability < 60){
+            return "cloudy"
+        }
+        if(celsius > 0){
+            return "rainy"
+        }
+        return "snowy"
+    }
 }
