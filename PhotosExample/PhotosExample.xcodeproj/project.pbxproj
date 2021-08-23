@@ -15,6 +15,7 @@
 		C0A85DD826D0D01000688280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A85DD626D0D01000688280 /* LaunchScreen.storyboard */; };
 		C0A85DE326D0D01100688280 /* PhotosExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85DE226D0D01100688280 /* PhotosExampleTests.swift */; };
 		C0A85DEE26D0D01100688280 /* PhotosExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85DED26D0D01100688280 /* PhotosExampleUITests.swift */; };
+		C0A85E3826D3C9D500688280 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85E3726D3C9D500688280 /* ImageZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C0A85DE926D0D01100688280 /* PhotosExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A85DED26D0D01100688280 /* PhotosExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosExampleUITests.swift; sourceTree = "<group>"; };
 		C0A85DEF26D0D01100688280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A85E3726D3C9D500688280 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C0A85DBF26D0D01000688280 = {
 			isa = PBXGroup;
 			children = (
+				C0A85E3726D3C9D500688280 /* ImageZoomViewController.swift */,
 				C0A85DCA26D0D01000688280 /* PhotosExample */,
 				C0A85DE126D0D01100688280 /* PhotosExampleTests */,
 				C0A85DEC26D0D01100688280 /* PhotosExampleUITests */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A85E3826D3C9D500688280 /* ImageZoomViewController.swift in Sources */,
 				C0A85DD026D0D01000688280 /* ViewController.swift in Sources */,
 				C0A85DCC26D0D01000688280 /* AppDelegate.swift in Sources */,
 				C0A85DCE26D0D01000688280 /* SceneDelegate.swift in Sources */,
