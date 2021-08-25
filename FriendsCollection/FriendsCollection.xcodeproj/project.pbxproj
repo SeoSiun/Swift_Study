@@ -15,6 +15,8 @@
 		C0A85E5226D6877700688280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A85E5026D6877700688280 /* LaunchScreen.storyboard */; };
 		C0A85E5D26D6877700688280 /* FriendsCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85E5C26D6877700688280 /* FriendsCollectionTests.swift */; };
 		C0A85E6826D6877700688280 /* FriendsCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85E6726D6877700688280 /* FriendsCollectionUITests.swift */; };
+		C0A85E7626D6925B00688280 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85E7526D6925B00688280 /* FriendCollectionViewCell.swift */; };
+		C0A85E7826D6934700688280 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85E7726D6934700688280 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C0A85E6326D6877700688280 /* FriendsCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A85E6726D6877700688280 /* FriendsCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionUITests.swift; sourceTree = "<group>"; };
 		C0A85E6926D6877700688280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A85E7526D6925B00688280 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0A85E7726D6934700688280 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Friend.swift; path = ../../MyFriends/Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		C0A85E4426D6877500688280 /* FriendsCollection */ = {
 			isa = PBXGroup;
 			children = (
+				C0A85E7726D6934700688280 /* Friend.swift */,
 				C0A85E4526D6877500688280 /* AppDelegate.swift */,
 				C0A85E4726D6877500688280 /* SceneDelegate.swift */,
 				C0A85E4926D6877500688280 /* ViewController.swift */,
 				C0A85E4B26D6877500688280 /* Main.storyboard */,
+				C0A85E7526D6925B00688280 /* FriendCollectionViewCell.swift */,
 				C0A85E4E26D6877700688280 /* Assets.xcassets */,
 				C0A85E5026D6877700688280 /* LaunchScreen.storyboard */,
 				C0A85E5326D6877700688280 /* Info.plist */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A85E7626D6925B00688280 /* FriendCollectionViewCell.swift in Sources */,
 				C0A85E4A26D6877500688280 /* ViewController.swift in Sources */,
+				C0A85E7826D6934700688280 /* Friend.swift in Sources */,
 				C0A85E4626D6877500688280 /* AppDelegate.swift in Sources */,
 				C0A85E4826D6877500688280 /* SceneDelegate.swift in Sources */,
 			);
