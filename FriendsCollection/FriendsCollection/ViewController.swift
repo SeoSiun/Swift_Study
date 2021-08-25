@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var numberOfCell: Int = 10
     let cellIdentifier: String = "cell"
@@ -22,7 +22,12 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // tableView에서는 indexPath.row로 쓰는 것과 달리 CollectionViewSms indexPath.item으로 사용
+        self.numberOfCell += 1
+        collectionView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
