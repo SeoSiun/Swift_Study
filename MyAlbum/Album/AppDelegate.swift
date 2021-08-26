@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  PhotosExample
+//  Album
 //
-//  Created by Terry on 2020/04/01.
-//  Copyright © 2020 Terry. All rights reserved.
+//  Created by Tony Jung on 2020/08/31.
+//  Copyright © 2020 Tony Jung. All rights reserved.
 //
 
 import UIKit
