@@ -20,15 +20,23 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         cell.textLabel?.text = friend.name.full
         cell.detailTextLabel?.text = friend.email
+        cell.imageView?.image = nil
         
-        guard let imageURL: URL = URL(string: friend.picture.thumbnail) else {
-            return cell
+        DispatchQueue.global().async {
+            guard let imageURL: URL = URL(string: friend.picture.thumbnail) else { return }
+            guard let imageData: Data = try? Data(contentsOf: imageURL) else { return }
+            
+            DispatchQueue.main.async {
+                // 다운로드하는 동안 스크롤하면 인덱스가 바뀔 수 있으니까 인덱스가 같을 때만 설정해줌
+                if let index: IndexPath = tableView.indexPath(for: cell){
+                    if index.row == indexPath.row {
+                        cell.imageView?.image = UIImage(data: imageData)
+                        cell.setNeedsLayout()
+                        cell.layoutIfNeeded()
+                    }
+                }
+            }
         }
-        guard let imageData: Data = try? Data(contentsOf: imageURL) else {
-            return cell
-        }
-        cell.imageView?.image = UIImage(data: imageData)
-        
         return cell
     }
     
@@ -57,7 +65,12 @@ class ViewController: UIViewController, UITableViewDataSource {
                 let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
                 self.friends = apiResponse.results
                 // reloadData는 메인쓰레드에서 실행해야함. -> 이렇게 백그라운드에서 하면 데이터가 안나옴
-                self.tableView.reloadData()
+                // self.tableView.reloadData()
+                
+                // main에서 해야하는건 디스패치 큐에 넣기
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch(let err) {
                 print(err.localizedDescription)
             }
