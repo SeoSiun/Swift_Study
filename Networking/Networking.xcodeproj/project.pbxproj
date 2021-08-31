@@ -16,6 +16,8 @@
 		C0A85F5326DA67B900688280 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85F5226DA67B900688280 /* NetworkingTests.swift */; };
 		C0A85F5E26DA67B900688280 /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85F5D26DA67B900688280 /* NetworkingUITests.swift */; };
 		C0A85F6C26DA688000688280 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85F6B26DA688000688280 /* Model.swift */; };
+		C0A85F6E26DD004B00688280 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85F6D26DD004B00688280 /* FriendTableViewCell.swift */; };
+		C0A85F7026DD0E9800688280 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A85F6F26DD0E9800688280 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C0A85F5D26DA67B900688280 /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
 		C0A85F5F26DA67B900688280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A85F6B26DA688000688280 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C0A85F6D26DD004B00688280 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		C0A85F6F26DD0E9800688280 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		C0A85F2F26DA67B800688280 = {
 			isa = PBXGroup;
 			children = (
+				C0A85F6F26DD0E9800688280 /* Request.swift */,
+				C0A85F6D26DD004B00688280 /* FriendTableViewCell.swift */,
 				C0A85F3A26DA67B800688280 /* Networking */,
 				C0A85F5126DA67B900688280 /* NetworkingTests */,
 				C0A85F5C26DA67B900688280 /* NetworkingUITests */,
@@ -262,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A85F4026DA67B800688280 /* ViewController.swift in Sources */,
+				C0A85F7026DD0E9800688280 /* Request.swift in Sources */,
 				C0A85F3C26DA67B800688280 /* AppDelegate.swift in Sources */,
+				C0A85F6E26DD004B00688280 /* FriendTableViewCell.swift in Sources */,
 				C0A85F3E26DA67B800688280 /* SceneDelegate.swift in Sources */,
 				C0A85F6C26DA688000688280 /* Model.swift in Sources */,
 			);

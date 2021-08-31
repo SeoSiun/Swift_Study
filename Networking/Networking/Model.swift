@@ -24,7 +24,7 @@ struct Friend: Codable {
     
     struct Picture: Codable {
         let large: String
-        let mediun: String
+        let medium: String
         let thumbnail: String
     }
     
