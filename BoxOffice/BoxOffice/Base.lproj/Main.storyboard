@@ -30,6 +30,9 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Uuf-pf-UNW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,8 +46,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C1f-4v-9Tv">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="Dbx-12-nUy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="Dbx-12-nUy">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="MCc-rV-f66" id="zHp-tG-Wzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,6 +108,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2Ii-Er-Aja" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bqt-d1-JyI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

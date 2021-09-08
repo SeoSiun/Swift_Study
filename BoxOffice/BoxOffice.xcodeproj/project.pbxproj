@@ -15,6 +15,7 @@
 		C00C5C1926E773960035955A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00C5C1726E773960035955A /* LaunchScreen.storyboard */; };
 		C00C5C2426E773960035955A /* BoxOfficeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C5C2326E773960035955A /* BoxOfficeTests.swift */; };
 		C00C5C2F26E773960035955A /* BoxOfficeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C5C2E26E773960035955A /* BoxOfficeUITests.swift */; };
+		C00C5C3D26E8E0F30035955A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C5C3C26E8E0F30035955A /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C00C5C2A26E773960035955A /* BoxOfficeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfficeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00C5C2E26E773960035955A /* BoxOfficeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeUITests.swift; sourceTree = "<group>"; };
 		C00C5C3026E773960035955A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00C5C3C26E8E0F30035955A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C00C5C0E26E773950035955A /* SceneDelegate.swift */,
 				C00C5C1026E773950035955A /* ViewController.swift */,
 				C00C5C1226E773950035955A /* Main.storyboard */,
+				C00C5C3C26E8E0F30035955A /* CollectionViewController.swift */,
 				C00C5C1526E773960035955A /* Assets.xcassets */,
 				C00C5C1726E773960035955A /* LaunchScreen.storyboard */,
 				C00C5C1A26E773960035955A /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00C5C3D26E8E0F30035955A /* CollectionViewController.swift in Sources */,
 				C00C5C1126E773950035955A /* ViewController.swift in Sources */,
 				C00C5C0D26E773950035955A /* AppDelegate.swift in Sources */,
 				C00C5C0F26E773950035955A /* SceneDelegate.swift in Sources */,
